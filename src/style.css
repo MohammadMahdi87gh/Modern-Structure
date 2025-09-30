@@ -1,4 +1,3 @@
-@import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 @font-face {
     font-family: vazir;
@@ -85,4 +84,5 @@ body {
     .responsive-villas {
         width: 31.3% !important;
     }
+
 }
