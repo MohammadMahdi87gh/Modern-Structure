@@ -1,0 +1,974 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> درباره ما </title>
+    <link rel="stylesheet" href="src/style.css">
+
+</head>
+
+<body class="w-full bg-gray-100 dark:bg-gray-800 flex justify-center items-center gap-10 lg:gap-20 flex-col">
+
+    <!-- header -->
+    <header class="max-w-[1600px] sticky top-0 z-10 bg-white/30 dark:bg-gray-800/30 backdrop-blur-2xl w-full flex h-20 shadow-sm" x-data="{ navbar: false}">
+
+        <!-- راست -->
+        <div class="w-3/6 md:w-5/6 xl:w-5/6 flex items-center justify-start pr-3 lg:gap-2 md:pr-4 xl:px-0 px lg:pr-12">
+
+            <!-- logo -->
+            <div class="md:w-1/12 lg:w-1/6 h-full flex items-center justify-start xl:justify-end lg:justify-center">
+                <img src="imgs/logo.png" alt="img" class="w-11 md:w-14 h-auto lg:w-16 xl:w-20">
+            </div>
+
+            <!-- btn navbar -->
+            <div id="openmenu" class="flex items-center justify-center text-black dark:text-white  dark:bg-gray-800 rounded-md p-2 mr-4 shadow-sm md:hidden">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 focus:rotate-90">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+
+            </div>
+
+            <!-- menu -->
+            <div class="hidden md:w-11/12 lg:w-5/6 h-full md:flex items-center justify-center pl-16 md:pl-8 xl:p-0">
+                <ul class="list-none flex text-gray-900 dark:text-white gap-4 lg:gap-5 xl:gap-10 text-sm lg:text-base xl:text-lg">
+
+                    <!-- صفحه اصلی -->
+                    <li class="flex gap-1 items-center hover:border-green-800 dark:hover:border-green-200 dark:hover:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl hover:border-2 hover:text-green-800">
+                        <a href="/index.html">صفحه اصلی</a>
+                    </li>
+
+                    <!-- فروش ویلا -->
+                    <li class="flex gap-1 relative group items-center hover:border-green-800 dark:hover:border-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl hover:border-2">
+
+                        <a href="#games" class="hover:text-green-800 dark:hover:text-green-200">فروش ویلا
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:size-3 lg:size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+
+                        <ul class="hidden group-hover:flex text-sm flex-col top-12 bg-gray-100 dark:bg-gray-800 rounded-b-lg shadow-sm w-40 absolute" x-cloak>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> ساحلی </a></li>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> جنگلی </a></li>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> شهری </a></li>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> شهرکی </a></li>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> مدرن </a></li>
+                            <li class="w-full py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="#"> عمارت </a></li>
+                        </ul>
+
+                    </li>
+
+                    <!--  فروش زمین -->
+                    <li class="flex gap-1 relative group items-center hover:border-green-800 dark:hover:border-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl hover:border-2">
+
+                        <a href="#earth" class="hover:text-green-800 dark:hover:text-green-200"> فروش زمین </a>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:size-3 lg:size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+
+                        <ul class="hidden group-hover:flex text-sm flex-col top-12 bg-gray-100 dark:bg-gray-800 rounded-b-lg shadow-sm w-40 absolute" x-cloak>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="#earth"> ساحلی </a></li>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="#earth"> جنگلی </a></li>
+                            <li class="w-full border-b-2 py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="#earth"> شهری </a></li>
+                            <li class="w-full py-3 border-gray-300 hover:bg-gray-200 hover:text-green-800 pr-3 hover:text-base hover:font-medium"> <a href="#earth"> شهرکی </a></li>
+                        </ul>
+
+                    </li>
+
+                    <!-- بلاگ -->
+                    <li class="flex gap-1 items-center hover:border-green-800 dark:hover:border-green-200 dark:hover:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl hover:border-2 hover:text-green-800">
+
+                        <a href="#">بلاگ</a>
+                    </li>
+
+                    <!-- تماس با ما -->
+                    <li class="flex gap-1 items-center hover:border-green-800 dark:hover:border-green-200 dark:hover:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl hover:border-2 hover:text-green-800">
+
+                        <a href="/about-conect-white-me.html">تماس با ما</a>
+                    </li>
+
+                    <!-- درباره ما -->
+                    <li class="flex gap-1 items-center hover:border-green-800 dark:hover:border-green-200 dark:hover:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl hover:border-2 hover:text-green-800">
+
+                        <a href="/about-conect-white-me.html">درباره ما</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- چپ -->
+        <div class="w-3/6 md:w-1/6 xl:w-1/6 flex items-center justify-end xl:justify-center gap-2 xl:gap-3 pl-4 md:pl-10">
+
+            <!-- dark mode -->
+            <button id="dark-toggle" class="cursor-pointer bg-gray-300 p-2 xl:p-2.5 shadow rounded-md dark:bg-gray-900 dark:text-white">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 dark:hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 hidden dark:block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                </svg>
+
+
+            </button>
+
+            <!-- supports -->
+            <div class="flex flex-col items-center justify-center lg:gap-1 h-full text-gray-900 dark:text-gray-200">
+
+                <p class="text-xs xl:text-sm">پشتیبانی</p>
+
+                <p class="text-sm xl:text-lg font-black">087151</p>
+
+            </div>
+
+            <!-- icon -->
+            <div class="p-2 bg-green-100 rounded-md flex h-auto items-center justify-center">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 xl:size-5 text-green-900">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+
+
+            </div>
+
+        </div>
+
+        <!-- منو -->
+        <div id="sidebar" class="md:hidden w-1/2 transform rounded-b-md translate-x-full transition-transform duration-300 absolute top-20 right-0 shadow-sm bg-gray-100 dark:bg-gray-800 py-3">
+            <ul class="list-none flex flex-col items-center justify-center text-gray-900 dark:text-white gap-4 text-sm" x-data="{ zirmenu1: false, zirmenu2: false}">
+
+                <!-- صفحه اصلی -->
+                <li class="flex justify-center gap-1 items-center active:border-green-800 dark:active:border-green-200 dark:active:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl active:border-2 active:text-green-800 w-full">
+                    <a href="/index.html">صفحه اصلی</a>
+                </li>
+
+                <!-- فروش ویلا -->
+                <li class="flex flex-col justify-center gap-1 items-center active:border-green-800 dark:active:border-green-200 dark:active:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl active:border-2 active:text-green-800 w-full">
+
+                    <div id="menu" class="flex flex-row items-center gap-2">
+                        <a href="#">فروش ویلا</a>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3 lg:size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+                    </div>
+
+
+                    <ul id="submenu" class="hidden transition-all duration-300 gap-4 text-sm flex-col bg-gray-200 dark:bg-gray-900 rounded-b-lg shadow-sm w-full">
+                        <li class="w-full text-center border-b-2 py-2 border-gray-100 hover:text-green-800 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> ساحلی </a></li>
+                        <li class="w-full text-center border-b-2 py-2 border-gray-100 hover:text-green-800 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> جنگلی </a></li>
+                        <li class="w-full text-center border-b-2 py-2 border-gray-100 hover:text-green-800 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> شهری </a></li>
+                        <li class="w-full text-center border-b-2 py-2 border-gray-100 hover:text-green-800 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> شهرکی </a></li>
+                        <li class="w-full text-center border-b-2 py-2 border-gray-100 hover:text-green-800 hover:text-base hover:font-medium"> <a href="/all-card-villa.html"> مدرن </a></li>
+                        <li class="w-full text-center py-2 border-gray-100 hover:text-green-800 hover:text-base hover:font-medium"> <a href="#"> عمارت </a></li>
+                    </ul>
+                </li>
+
+                <!-- فروش زمین -->
+                <li class="flex flex-col justify-center gap-1 items-center active:border-green-800 dark:active:border-green-200 dark:active:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl active:border-2 active:text-green-800 w-full">
+
+                    <div id="menu1" class="flex flex-row gap-2 items-center">
+
+                        <a href="#earth">فروش زمین</a>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3 lg:size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+
+                    </div>
+
+                    <ul id="submenu1" class="hidden gap-4 text-sm flex-col bg-gray-200 dark:bg-gray-900 rounded-b-lg shadow-sm w-full" x-cloak>
+                        <li class="w-full border-b-2 py-2 border-gray-100 hover:text-green-800 text-center hover:text-base hover:font-medium"> <a href="#earth"> ساحلی </a></li>
+                        <li class="w-full border-b-2 py-2 border-gray-100 hover:text-green-800 text-center hover:text-base hover:font-medium"> <a href="#earth"> جنگلی </a></li>
+                        <li class="w-full border-b-2 py-2 border-gray-100 hover:text-green-800 text-center hover:text-base hover:font-medium"> <a href="#earth"> شهری </a></li>
+                        <li class="w-full py-2 border-gray-100 hover:text-green-800 text-center hover:text-base hover:font-medium"> <a href="#earth"> شهرکی </a></li>
+                    </ul>
+                </li>
+
+                <!-- بلاگ -->
+                <li class="flex justify-center gap-1 items-center active:border-green-800 dark:active:border-green-200 dark:active:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl active:border-2 active:text-green-800 w-full">
+
+                    <a href="#">بلاگ</a>
+                </li>
+
+                <!-- تماس با ما -->
+                <li class="flex justify-center gap-1 items-center active:border-green-800 dark:active:border-green-200 dark:active:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl active:border-2 active:text-green-800 w-full">
+
+                    <a href="/about-conect-white-me.html">تماس با ما</a>
+                </li>
+
+                <!-- درباره ما -->
+                <li class="flex justify-center gap-1 items-center active:border-green-800 dark:active:border-green-200 dark:active:text-green-200 p-1 lg:p-2 xl:py-2 xl:px-3 rounded-2xl active:border-2 active:text-green-800 w-full">
+
+                    <a href="/about-conect-white-me.html">درباره ما</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <main data-aos="fade-up" class="w-full flex gap-16 flex-col max-w-[1600px] ">
+
+        <!-- section1 -->
+        <section data-aos="fade-up" class="w-full flex items-center justify-center py-10 md:py-0 px-5 lg:px-10 xl:px-14">
+
+            <div class="w-full md:w-1/2 flex flex-col gap-3 xl:gap-4 items-center justify-center">
+
+                <h1 class="text-2xl lg:text-3xl xl:text-4xl font-black dark:text-white"> مدرن سازه رو بیشتر بشناس </h1>
+                <p class="text-gray-500 text-[10px] xl:w-3/4 xl:leading-6 lg:text-sm text-center"> به دنیای زیبای ویلایی خوش آمدید! اگر شما هم به دنبال خرید یک ویلا برای زندگی طبیعت‌دوستانه یا استفاده به عنوان مکانی برای تفریح و استراحت هستید،از اینجاست که باید شروع کنید. </p>
+                <button class="bg-blue-800 py-2 px-5 mt-2 text-[12px] md:text-base rounded-full text-white active:bg-blue-900 hover:bg-blue-900 transition-all"> مشاهده ویلا های مدرن سازه </button>
+
+            </div>
+
+        </section>
+
+        <!-- section2 -->
+        <section data-aos="fade-up" class="w-full items-center bg-gray-900 py-10">
+
+            <!-- numbers -->
+            <div class="w-full flex flex-col md:flex-row gap-7 text-white">
+
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+
+                    <!-- 1 -->
+                    <div class="w-1/2 flex flex-col gap-1">
+
+                        <!-- number && icon -->
+                        <div class="flex flex-row items-center justify-center gap-1">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-blue-800">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <p class="font-semibold md:text-lg xl:text-xl"> 450,000 </p>
+
+                        </div>
+
+                        <p class="text-[12px] text-gray-500 lg:text-sm"> زبان آموز فعال ماهانه </p>
+
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="w-1/2 flex flex-col gap-1">
+
+                        <!-- number && icon -->
+                        <div class="flex flex-row items-center justify-center gap-1">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-blue-800">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <p class="font-semibold md:text-lg xl:text-xl"> 450,000 </p>
+
+                        </div>
+
+                        <p class="text-[12px] text-gray-500 lg:text-sm"> زبان آموز فعال ماهانه </p>
+
+                    </div>
+
+                </div>
+
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+
+                    <!-- 3 -->
+                    <div class="w-1/2 flex flex-col gap-1">
+
+                        <!-- number && icon -->
+                        <div class="flex flex-row items-center justify-center gap-1">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-blue-800">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <p class="font-semibold md:text-lg xl:text-xl"> 450,000 </p>
+
+                        </div>
+
+                        <p class="text-[12px] text-gray-500 lg:text-sm"> زبان آموز فعال ماهانه </p>
+
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="w-1/2 flex flex-col gap-1">
+
+                        <!-- number && icon -->
+                        <div class="flex flex-row items-center justify-center gap-1">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-blue-800">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <p class="font-semibold md:text-lg xl:text-xl"> 450,000 </p>
+
+                        </div>
+
+                        <p class="text-[12px] text-gray-500 lg:text-sm"> زبان آموز فعال ماهانه </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section3 -->
+        <section data-aos="fade-up" class="w-full flex flex-col gap-10 px-5 lg:px-10 xl:px-14">
+
+            <!-- up -->
+            <div class="w-full flex flex-col md:flex-row gap-10">
+
+                <!-- text -->
+                <div class="w-full flex flex-col items-start justify-center gap-1">
+
+                    <h2 class="font-black text-xl lg:text-2xl xl:text-3xl dark:text-white"> ماموریت ها </h2>
+                    <hr class="w-22 border-2 rounded-full border-blue-800 lg:w-28 xl:w-32">
+                    <p class="text-gray-500 mt-3 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                </div>
+
+                <!-- image -->
+                <div class="w-full flex xl:justify-center">
+                    <img src="/imgs/section3-2.jpg" alt="check net!" class="w-full h-full rounded-2xl xl:w-4/5 xl:h-80">
+                </div>
+
+            </div>
+
+            <h4 class="font-semibold dark:font-medium text-xl text-center text-blue-800 dark:text-blue-300"> ما کی هستیم؟ </h4>
+
+            <!-- down -->
+            <div class="w-full flex flex-col md:flex-row gap-10">
+
+                <!-- image -->
+                <div class="w-full flex xl:justify-center">
+                    <img src="/imgs/abu-con.jpg" alt="check net!" class="w-full h-full rounded-2xl xl:w-4/5 xl:h-80">
+                </div>
+
+                <!-- text -->
+                <div class="w-full flex flex-col items-start justify-center gap-1">
+
+                    <h2 class="font-black text-xl lg:text-2xl xl:text-3xl dark:text-white"> چشم انداز ما </h2>
+                    <hr class="w-22 border-2 rounded-full border-blue-800 lg:w-28 xl:w-32">
+                    <p class="text-gray-500 mt-3 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section4 -->
+        <section data-aos="fade-up" class="w-full flex flex-col gap-10 xl:gap-20 px-5 lg:px-10 xl:px-14">
+
+            <!-- headling -->
+            <div class="w-full flex flex-col gap-1 items-center justify-center">
+
+                <h2 class="font-black text-xl lg:text-2xl xl:text-3xl dark:text-white"> ارزش های مدرن سازه </h2>
+                <hr class="w-22 border-2 rounded-full border-blue-800 lg:w-28 xl:w-32">
+
+            </div>
+
+            <!-- trusts -->
+            <div class="w-full flex flex-col gap-5 md:gap-10">
+
+                <!-- up -->
+                <div class="w-full flex flex-col md:flex-row gap-5 md:gap-0 xl:pr-28">
+
+                    <!-- 1 -->
+                    <div class="w-full md:w-1/3 flex flex-col gap-2 items-start">
+
+                        <h2 class="font-black text-lg lg:text-xl xl:text-2xl dark:text-white"> ماموریت ها </h2>
+                        <p class="text-gray-500 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="w-full md:w-1/3 flex flex-col gap-2 items-start">
+
+                        <h2 class="font-black text-lg lg:text-xl xl:text-2xl dark:text-white"> کیفیت </h2>
+                        <p class="text-gray-500 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="w-full md:w-1/3 flex flex-col gap-2 items-start">
+
+                        <h2 class="font-black text-lg lg:text-xl xl:text-2xl dark:text-white"> انعطاف </h2>
+                        <p class="text-gray-500 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                    </div>
+
+                </div>
+
+                <!-- down -->
+                <div class="w-full flex flex-col md:flex-row gap-5 md:gap-0 xl:pr-28">
+
+                    <!-- 4 -->
+                    <div class="w-full md:w-1/3 flex flex-col gap-2 items-start">
+
+                        <h2 class="font-black text-lg lg:text-xl xl:text-2xl dark:text-white"> احترام </h2>
+                        <p class="text-gray-500 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="w-full md:w-1/3 flex flex-col gap-2 items-start">
+
+                        <h2 class="font-black text-lg lg:text-xl xl:text-2xl dark:text-white"> سخاوت </h2>
+                        <p class="text-gray-500 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="w-full md:w-1/3 flex flex-col gap-2 items-start">
+
+                        <h2 class="font-black text-lg lg:text-xl xl:text-2xl dark:text-white"> شور و شوق </h2>
+                        <p class="text-gray-500 text-[12px] leading-5 lg:text-sm xl:text-base lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه یه تیم خلاق و پر انرژی که تلاش میکنه که بهترین ویلا با رابط کاربری خوبی رو برا شما عزیزان فراهم کنه. شما میتونید با گذاشتن انرزی مثبت از سایت خودتون حمایت کنید. </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section5 -->
+        <section data-aos="fade-up" class="w-full flex flex-col gap-10 bg-gray-900 py-10 md:px-5 lg:px-10 xl:px-14">
+
+            <!-- headling -->
+            <div class="w-full flex flex-col gap-1 items-center justify-center px-5 lg:px-10 xl:px-14">
+                <h2 class="font-black text-xl lg:text-2xl xl:text-3xl text-white"> داستان مدرن سازه </h2>
+                <p class="text-gray-500 mt-3 text-[12px] leading-5 lg:text-sm xl:text-base text-center lg:leading-6 xl:leading-7 xl:w-2/3"> مدرن سازه در سال 1390 تاسیس شد، و تنها در نیم دهه با تبلیغات قدرتمند و تولید محتوای ارزشمند تبدیل به پرطرفدار ترین سایت فروش ویلا شد. </p>
+            </div>
+
+            <!-- contents -->
+            <div class="w-full flex flex-col gap-10 md:gap-10 md:flex-row">
+
+                <!-- start -->
+                <div class="w-full md:w-1/4 flex items-center flex-col gap-10 xl:gap-20">
+
+                    <h4 class="font-semibold text-sm text-center text-blue-800 xl:text-xl"> آغاز سفر مدرن سازه </h4>
+
+                    <div class="w-2/3 md:w-full rounded-2xl py-5 xl:py-10 bg-white gap-5 text-center">
+                        <h4 class="font-black text-lg text-center xl:text-2xl">1392</h4>
+                        <p class="text-[12px] text-center xl:text-sm"> طراحی، ساخت ،فروش </p>
+                    </div>
+
+                </div>
+
+                <!-- 1 -->
+                <div class="w-full md:w-1/4 flex items-center flex-col gap-10 xl:gap-20">
+
+                    <div class="w-2/3 md:w-full rounded-2xl py-5 xl:py-10 bg-white gap-5 text-center">
+                        <h4 class="font-black text-lg text-center xl:text-2xl">1394</h4>
+                        <p class="text-[12px] text-center xl:text-sm"> لانچ نسخه اولیه </p>
+                    </div>
+
+                </div>
+
+                <!-- 2 -->
+                <div class="w-full md:w-1/4 flex items-center md:justify-end flex-col gap-10 xl:gap-20">
+
+                    <div class="w-2/3 md:w-full rounded-2xl py-5 xl:py-10 bg-white gap-5 text-center">
+                        <h4 class="font-black text-lg text-center xl:text-2xl">1398</h4>
+                        <p class="text-[12px] text-center xl:text-sm"> فروش در 6 کشور </p>
+                    </div>
+
+                </div>
+
+                <!-- 3 -->
+                <div class="w-full md:w-1/4 flex items-center flex-col gap-10 xl:gap-20">
+
+                    <div class="w-2/3 md:w-full rounded-2xl py-5 xl:py-10 bg-white gap-5 text-center">
+                        <h4 class="font-black text-lg text-center xl:text-2xl">1402</h4>
+                        <p class="text-[12px] text-center xl:text-sm"> بین المللی شدن مدرن سازه </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section6 -->
+        <section data-aos="fade-up" class="w-full flex flex-col items-center gap-3 px-5 lg:px-10 xl:px-14">
+
+            <!-- headling -->
+            <div class="w-full flex flex-col gap-2 items-center justify-center">
+
+                <h2 class="font-black text-xl lg:text-2xl xl:text-3xl dark:text-white"> تیم مدرن سازه </h2>
+                <hr class="w-22 border-2 rounded-full border-blue-800 lg:w-28 xl:w-32">
+
+            </div>
+
+            <!-- images -->
+            <div class="w-full md:w-1/2 flex justify-center overflow-hidden flex-row mt-5 bg-yellow-50 border-2 rounded-2xl border-black border-dashed">
+
+                <div class="w-1/4 md:w-auto"><img src="/imgs/nazarm1.png" alt="check net!" class="h-22 md:h-28 xl:h-40"></div>
+                <div class="w-1/4 md:w-auto"><img src="/imgs/nazarm2.png" alt="check net!" class="h-22 md:h-28 xl:h-40"></div>
+                <div class="w-1/4 md:w-auto"><img src="/imgs/nazarm3.png" alt="check net!" class="h-22 md:h-28 xl:h-40"></div>
+                <div class="w-1/4 md:w-auto"><img src="/imgs/nazarm4.png" alt="check net!" class="h-22 md:h-28 xl:h-40"></div>
+
+            </div>
+
+            <!-- text -->
+            <div class="w-full text-center flex flex-col gap-2">
+                <p class="dark:text-white text-sm lg:text-base xl:text-xl">عسل حیدری، حسین عباسی، علی اسکندری، حسام حیدری</p>
+                <p class="dark:text-gray-400 text-[12px] lg:text-sm text-gray-800"> بنیان گذاران مدرن سازه </p>
+            </div>
+
+        </section>
+
+        <!-- section7 -->
+        <section class="w-full flex flex-col md:flex-row items-center gap-5 px-5 lg:px-10 xl:px-14">
+
+            <!-- up && right -->
+            <div class="w-full flex flex-row gap-5">
+
+                <!-- 1 -->
+                <div class="w-1/3 flex flex-col gap-5">
+
+                    <!-- image -->
+                    <div class="w-full overflow-hidden rounded-full bg-orange-200"><img src="/imgs/nazarm1.png" alt="check net!" class="w-full h-32 xl:h-60"></div>
+
+                    <!-- name -->
+                    <div class="flex flex-col text-center gap-1">
+                        <h3 class="text-sm xl:text-lg dark:text-white">فاطمه امامی</h3>
+                        <p class="text-[10px] xl:text-sm text-gray-700 dark:text-gray-500">مهندس عمران</p>
+                    </div>
+
+                </div>
+
+                <!-- 2 -->
+                <div class="w-1/3 flex flex-col gap-5">
+
+                    <!-- image -->
+                    <div class="w-full overflow-hidden rounded-b-full rounded-t-2xl bg-teal-200"><img src="/imgs/nazarm2.png" alt="check net!" class="w-full h-32 xl:h-60"></div>
+
+                    <!-- name -->
+                    <div class="flex flex-col text-center gap-1">
+                        <h3 class="text-sm xl:text-lg dark:text-white">میلاد حمیدیان</h3>
+                        <p class="text-[10px] xl:text-sm text-gray-700 dark:text-gray-500">مهندس زیرساخت</p>
+                    </div>
+
+                </div>
+
+                <!-- 3 -->
+                <div class="w-1/3 flex flex-col gap-5">
+
+                    <!-- image -->
+                    <div class="w-full overflow-hidden rounded-2xl border-2 border-dashed bg-rose-200"><img src="/imgs/nazarm4.png" alt="check net!" class="w-full h-32 xl:h-60"></div>
+
+                    <!-- name -->
+                    <div class="flex flex-col text-center gap-1">
+                        <h3 class="text-sm xl:text-lg dark:text-white">محمد جواد علیزاده</h3>
+                        <p class="text-[10px] xl:text-sm text-gray-700 dark:text-gray-500">توسعه دهنده وب</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- down && left -->
+            <div class="w-full flex flex-row gap-5">
+
+                <!-- 1 -->
+                <div class="w-1/3 flex flex-col gap-5">
+
+                    <!-- image -->
+                    <div class="w-full overflow-hidden rounded-full bg-orange-200"><img src="/imgs/nazarm1.png" alt="check net!" class="w-full h-32 xl:h-60"></div>
+
+                    <!-- name -->
+                    <div class="flex flex-col text-center gap-1">
+                        <h3 class="text-sm xl:text-lg dark:text-white">سارا سعادت</h3>
+                        <p class="text-[10px] xl:text-sm text-gray-700 dark:text-gray-500">تولید محتوا</p>
+                    </div>
+
+                </div>
+
+                <!-- 2 -->
+                <div class="w-1/3 flex flex-col gap-5">
+
+                    <!-- image -->
+                    <div class="w-full overflow-hidden rounded-2xl bg-lime-100"><img src="/imgs/nazarm3.png" alt="check net!" class="w-full h-32 xl:h-60"></div>
+
+                    <!-- name -->
+                    <div class="flex flex-col text-center gap-1">
+                        <h3 class="text-sm xl:text-lg dark:text-white">محمد ابراهیمی</h3>
+                        <p class="text-[10px] xl:text-sm text-gray-700 dark:text-gray-500">مهندس اجرایی</p>
+                    </div>
+
+                </div>
+
+                <!-- 3 -->
+                <div class="w-1/3 flex flex-col gap-5">
+
+                    <!-- image -->
+                    <div class="w-full overflow-hidden rounded-full border-2 border-dashed bg-blue-50"><img src="/imgs/nazarm2.png" alt="check net!" class="w-full h-32 xl:h-60"></div>
+
+                    <!-- name -->
+                    <div class="flex flex-col text-center gap-1">
+                        <h3 class="text-sm xl:text-lg dark:text-white">محمد حسین تفضلیان</h3>
+                        <p class="text-[10px] xl:text-sm text-gray-700 dark:text-gray-500">مهندس عمران</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section8 -->
+        <section class="w-full flex flex-col items-center py-10 gap-5 px-5 lg:px-10 xl:px-14 bg-gray-900">
+
+            <div class="w-full flex flex-col gap-3 items-center">
+
+                <h2 class="font-bold text-white text-lg xl:text-2xl"> دوست دارید عضو تیم ما باشید؟ </h2>
+                <h4 class="font-medium text-sm xl:text-xl text-center text-blue-300"> رزومتو برامون ارسال کن </h4>
+                <button class="bg-blue-800 py-2 px-5 mt-2 text-[12px] md:text-base rounded-full text-white active:bg-blue-900 hover:bg-blue-900 transition-all"> مشاهده ویلا های مدرن سازه </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer data-aos="fade-up" class="w-full flex flex-col gap-20 md:gap-10 xl:gap-16 mt-10 pt-10 bg-white dark:bg-gray-900">
+
+        <!-- 3 up -->
+        <div class="w-full flex flex-col md:flex-row gap-10 px-5 lg:px-10 xl:px-14">
+            <!-- menus -->
+            <div data-aos="fade-up" class="w-full md:w-1/3 flex flex-row">
+
+                <!-- right -->
+                <div class="w-1/2 items-start dark:text-white">
+
+                    <!-- ul menus -->
+                    <ul class="list-none flex flex-col gap-4 pr-5">
+
+                        <!-- صفحه اصلی -->
+                        <li class="flex justify-start flex-row gap-2 items-center font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/index.html"> صفحه اصلی </a>
+
+                        </li>
+
+                        <!-- ویلا های مدرن سازه -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/all-card-villa.html"> ویلا های مدرن سازه </a>
+
+                        </li>
+
+                        <!-- ویلا های جدید -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/all-card-villa.html"> ویلا های جدید </a>
+
+                        </li>
+
+                        <!-- زمین های جدید -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/all-card-villa.html"> زمین های جدید </a>
+
+                        </li>
+
+                        <!-- اخبار شرکت -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#akhbar-majaleh"> اخبار شرکت </a>
+
+                        </li>
+
+                        <!-- مجله شرکت -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#akhbar-majaleh"> مجله شرکت </a>
+
+                        </li>
+
+                        <!-- گردشگری گیلان -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#gilan"> گردشگری گیلان </a>
+
+                        </li>
+
+                        <!-- بلاگ -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#"> بلاگ </a>
+
+                        </li>
+
+                        <!-- تماس با ما  -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#"> تماس با ما </a>
+
+                        </li>
+
+                        <!-- درباره ما -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#"> درباره ما </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- left -->
+                <div class="w-1/2 items-start dark:text-white">
+
+                    <!-- ul menus -->
+                    <ul class="list-none flex flex-col gap-4 pr-5">
+
+                        <!-- صفحه اصلی -->
+                        <li class="flex justify-start flex-row gap-2 items-center font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/index.html"> صفحه اصلی </a>
+
+                        </li>
+
+                        <!-- ویلا های مدرن سازه -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/all-card-villa.html"> ویلا های مدرن سازه </a>
+
+                        </li>
+
+                        <!-- ویلا های جدید -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/all-card-villa.html"> ویلا های جدید </a>
+
+                        </li>
+
+                        <!-- زمین های جدید -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="/all-card-villa.html"> زمین های جدید </a>
+
+                        </li>
+
+                        <!-- اخبار شرکت -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#akhbar-majaleh"> اخبار شرکت </a>
+
+                        </li>
+
+                        <!-- مجله شرکت -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#akhbar-majaleh"> مجله شرکت </a>
+
+                        </li>
+
+                        <!-- گردشگری گیلان -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#gilan"> گردشگری گیلان </a>
+
+                        </li>
+
+                        <!-- بلاگ -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#"> بلاگ </a>
+
+                        </li>
+
+                        <!-- تماس با ما  -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#"> تماس با ما </a>
+
+                        </li>
+
+                        <!-- درباره ما -->
+                        <li class="flex flex-row gap-2 items-center justify-start font-medium text-[12px] xl:text-base">
+
+                            <hr class="w-3 border-2 border-cyan-800 dark:border-cyan-500 rounded-full">
+                            <a href="#"> درباره ما </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- about -->
+            <div data-aos="fade-up" class="w-full md:w-1/3 flex flex-col gap-5">
+
+                <!-- image -->
+                <div class="w-full flex flex-col items-center bg-gray-100 rounded-4xl p-6">
+                    <img src="/imgs/logo.png" alt="check net!" class="md:w-32 xl:w-52">
+                    <h3 class="text-sm text-gray-800 font-semibold md:text-[11px] xl:text-lg"> شرکت انبوه سازان مدرن سازه زیباکنار </h3>
+                </div>
+
+                <p class="text-gray-500 text-[11px] text-center leading-5 md:text-[10px] xl:text-sm xl:leading-7"> شرکت انبوه سازان مدرن سازه زیباکنار از مهر ماه سال 1393 کار خود را با طراحی و ساخت اولین پروژه شهرک سازی با نام زمرد سبز یک، شروع کرد و در مدت زمانی هفت ساله با به پایان رساندن پنج پروژه شهرک سازی توانست به عنوان یک شرکت خوشنام و موفق
+                    در عرصه ساخت و ساز مطرح گردد </p>
+
+            </div>
+
+            <!-- maps -->
+            <div data-aos="fade-up" class="w-full md:w-1/3 flex flex-col items-center gap-5">
+
+                <!-- map -->
+                <div class="w-full rounded-4xl h-60 md:h-44 xl:h-64">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19519.790514551867!2d49.88199466185477!3d37.429957312253855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x401ffdb0ffc363e1%3A0x45794de645aae7c1!2sZibakenar%2C%20Gilan%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1758785376934!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;border-radius: 32px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- icon location -->
+                <div class="rounded-full -mt-10 bg-blue-700 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 md:size-4 xl:size-5 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+                </div>
+
+                <!-- content -->
+                <div class="w-full flex flex-col gap-2 items-center md:-mt-3 xl:-mt-2">
+
+                    <span class="font-semibold text-xl md:text-lg xl:text-xl dark:text-white dark:font-medium"> شهرستان<span class="text-blue-800"> زیباکنار</span></span>
+                    <p class="font-semibold text-[12px] text-gray-800 md:text-[10px] xl:text-sm dark:text-gray-300 dark:font-medium"> اتوبان رشت، جاده کوچصفهان، کیلومتر17، زیباکنار </p>
+
+                    <!-- icons -->
+                    <div class="flex flex-row items-center justify-center mt-5 xl:mt-2 gap-3">
+
+                        <!-- 1 -->
+                        <div class="p-2 bg-gray-100 dark:bg-gray-950 cursor-pointer rounded-full">
+                            <svg class="size-5 dark:text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z" fill="currentColor"/>
+                        </svg>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="p-2 bg-gray-100 dark:bg-gray-950 cursor-pointer rounded-full">
+                            <svg class="size-5 dark:text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_17_27)">
+                            <path d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z" fill="currentColor"/>
+                            <path d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z" fill="currentColor"/>
+                            <path d="M39.6937 11.1844C39.6937 12.7782 38.4 14.0625 36.8156 14.0625C35.2219 14.0625 33.9375 12.7688 33.9375 11.1844C33.9375 9.59065 35.2313 8.30627 36.8156 8.30627C38.4 8.30627 39.6937 9.60003 39.6937 11.1844Z" fill="currentColor"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_17_27">
+                            <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="p-2 bg-gray-100 dark:bg-gray-950 cursor-pointer rounded-full">
+                            <svg class="size-5 dark:text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_17_68)">
+                            <path d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z" fill="currentColor"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_17_68">
+                            <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="p-2 bg-gray-100 dark:bg-gray-950 cursor-pointer rounded-full">
+                            <svg class="size-5 dark:text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.2 48C22 48 16.6 44.3 16.6 35.4V21.2H10V13.5C17.2 11.6 20.2 5.4 20.6 0H28.1V12.2H36.8V21.2H28.1V33.6C28.1 37.3 30 38.6 33 38.6H37.2V48H29.2Z" fill="currentColor"/>
+                        </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2 down -->
+        <div class="w-full flex flex-col gap-5 items-center bg-gray-100 dark:bg-slate-800">
+
+            <!-- icon location -->
+            <div class="rounded-full -mt-5 bg-gray-100 p-2 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 xl:size-5 fill-current text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+            </div>
+
+            <!-- numbers -->
+            <div class="w-full flex flex-col md:flex-row gap-3 dark:text-white">
+
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <span class="font-semibold w-1/2 md:text-sm xl:text-base"> 9851065 <span class="font-medium"> 0933 </span> </span>
+                    <span class="font-semibold w-1/2 md:text-sm xl:text-base"> 9851065 <span class="font-medium"> 0933 </span> </span>
+                </div>
+
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <span class="font-semibold w-1/2 md:text-sm xl:text-base"> 9851065 <span class="font-medium"> 0933 </span> </span>
+                    <span class="font-semibold w-1/2 md:text-sm xl:text-base"> 9851065 <span class="font-medium"> 0933 </span> </span>
+                </div>
+
+            </div>
+
+            <!-- modern structure -->
+            <div class="w-full flex dark:bg-gray-900 flex-col items-center bg-slate-800 pt-3 px-3 gap-5">
+
+                <!-- text -->
+                <span class="text-gray-500 text-sm"> کلیه حقوق این سایت متعلق به <span class="text-white font-semibold dark:font-medium"> مدرن سازه </span> می باشد </span>
+
+                <button class="p-3 flex items-center justify-center text-white bg-slate-900 dark:bg-slate-950">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                        </svg>
+                    </a>
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script type="module" src="/villas.js"></script>
+
+</body>
+
+</html>
