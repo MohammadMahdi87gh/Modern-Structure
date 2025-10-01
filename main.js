@@ -1,7 +1,3 @@
-import './swiper'
-import './gsap'
-import './Dynamic'
-
 
 
 // scroll
@@ -102,6 +98,7 @@ earthtoggle2.addEventListener("click", () => {
     }
 
 });
+
 
 
 
