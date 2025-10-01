@@ -1,6 +1,6 @@
-import '../src/swiper'
-import '../src/gsap'
-import '../src/Dynamic'
+import 'swiper'
+import 'gsap'
+import 'Dynamic'
 
 
 
@@ -100,4 +100,5 @@ earthtoggle2.addEventListener("click", () => {
         earthtoggle2.classList.add("border-gray-900");
         villatoggle2.classList.remove("border-gray-900");
     }
+
 });
