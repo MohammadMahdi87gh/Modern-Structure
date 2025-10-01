@@ -1,11 +1,11 @@
 // دیتای ویلا های جدید (section5)
 const villas = [
-    { code: "0065", location: "شمال، رامسر", name: "شهرک ساحلی-تیپ دوبلکس", price: "3,200,000,000", size: "250 متر", image: "../imgs/emarat1.jpg" },
-    { code: "0066", location: "چالوس", name: "شهرک جنگلی-تیپ تریبلکس", price: "4,800,000,000", size: "300 متر", image: "../imgs/emarat2.jpg" },
-    { code: "0067", location: "نور", name: "شهرک الهیه-ویلای مدرن", price: "5,500,000,000", size: "280 متر", image: "../imgs/emarat3.jpg" },
-    { code: "0068", location: "محمودآباد", name: "شهرک بنفشه-ویلا باغ", price: "2,900,000,000", size: "200 متر", image: "../imgs/emarat6.jpg" },
-    { code: "0069", location: "کلارآباد", name: "شهرک الماس-ویلا لوکس", price: "8,000,000,000", size: "350 متر", image: "../imgs/emarat8.jpg" },
-    { code: "0070", location: "متل قو", name: "شهرک فردوس-ویلا دوبلکس", price: "6,700,000,000", size: "320 متر", image: "../imgs/emarat4.webp" }
+    { code: "0065", location: "شمال، رامسر", name: "شهرک ساحلی-تیپ دوبلکس", price: "3,200,000,000", size: "250 متر", image: "./imgs/emarat1.jpg" },
+    { code: "0066", location: "چالوس", name: "شهرک جنگلی-تیپ تریبلکس", price: "4,800,000,000", size: "300 متر", image: "./imgs/emarat2.jpg" },
+    { code: "0067", location: "نور", name: "شهرک الهیه-ویلای مدرن", price: "5,500,000,000", size: "280 متر", image: "./imgs/emarat3.jpg" },
+    { code: "0068", location: "محمودآباد", name: "شهرک بنفشه-ویلا باغ", price: "2,900,000,000", size: "200 متر", image: "./imgs/emarat6.jpg" },
+    { code: "0069", location: "کلارآباد", name: "شهرک الماس-ویلا لوکس", price: "8,000,000,000", size: "350 متر", image: "./imgs/emarat8.jpg" },
+    { code: "0070", location: "متل قو", name: "شهرک فردوس-ویلا دوبلکس", price: "6,700,000,000", size: "320 متر", image: "./imgs/emarat4.webp" }
 ];
 
 // انتخاب کانتینر
@@ -312,4 +312,5 @@ Customer1.forEach(Comments1 => {
     `;
 
     container3.appendChild(card3);
+
 });
