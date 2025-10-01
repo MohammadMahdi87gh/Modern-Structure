@@ -1,7 +1,4 @@
-import Swiper from 'swiper';
-import { Navigation, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+
 
 // section2 gallery
 const swiper = new Swiper('.swiper', {
@@ -33,5 +30,6 @@ const swiper = new Swiper('.swiper', {
             }
         }
     }
+
 
 });
