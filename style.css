@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@font-face {
+    font-family: vazir;
+    src: url(../Vazir-Medium.ttf);
+}
+
+html,
+body {
+    direction: rtl;
+    font-family: vazir;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+
+/* section1 */
+
+.text-vsm {
+    font-size: 12px;
+}
+
+
+/* .swiper-wrapper */
+
+.swiper .swiper-wrapper {
+    flex-direction: column !important;
+    gap: 60px !important;
+}
+
+@media (min-width: 768px) {
+    .swiper .swiper-wrapper {
+        flex-direction: row !important;
+        gap: 0 !important;
+    }
+}
+
+
+/* .swiper-slide */
+
+.swiper-wrapper .swiper-slide {
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .swiper-wrapper .swiper-slide {
+        width: 48% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .swiper-wrapper .swiper-slide {
+        width: 31.3% !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .swiper-wrapper .swiper-slide {
+        width: 32% !important;
+    }
+}
+
+
+/* responsive-villas */
+
+.responsive-villas {
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .responsive-villas {
+        width: 47% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .responsive-villas {
+        width: 30% !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .responsive-villas {
+        width: 31.3% !important;
+    }
+}
