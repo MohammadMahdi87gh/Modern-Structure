@@ -1,6 +1,6 @@
-import './src/swiper'
-import './src/gsap'
-import './src/Dynamic'
+import '../src/swiper'
+import '../src/gsap'
+import '../src/Dynamic'
 
 
 
@@ -102,3 +102,4 @@ earthtoggle2.addEventListener("click", () => {
     }
 
 });
+
