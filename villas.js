@@ -53,8 +53,8 @@ toggleBtn.addEventListener("click", () => {
 
 // دیتای زمین های جدید (section7)
 const villas2 = [
-    { code: "0105", location: "رشت", name: " تیپ دوبلکس ", price: "6,200,000,000", size: "300 متر", image: "../imgs/villa20.jpg" },
-    { code: "0106", location: "سراوان", name: " تیپ تریبلکس ", price: "1,200,000,000", size: "170 متر", image: "../imgs/villa14.jpg" },
+    { code: "0105", location: "رشت", name: " تیپ دوبلکس ", price: "6,200,000,000", size: "300 متر", image: "/imgs/villa20.jpg" },
+    { code: "0106", location: "سراوان", name: " تیپ تریبلکس ", price: "1,200,000,000", size: "170 متر", image: "./imgs/villa14.jpg" },
     { code: "0107", location: "رودبار", name: " ویلای مدرن ", price: "4,600,000,000", size: "230 متر", image: "../imgs/villa18.jpg" },
     { code: "0108", location: "کیاشهر", name: " ویلا باغ ", price: "7,600,000,000", size: "330 متر", image: "../imgs/villa17.jpg" },
     { code: "0109", location: "کلاچای", name: " ویلا لوکس ", price: "8,990,000,000", size: "510 متر", image: "../imgs/villa16.jpg" },
@@ -155,4 +155,5 @@ villas2.forEach(villass => {
     `;
 
     containervilla.appendChild(cards);
+
 });
